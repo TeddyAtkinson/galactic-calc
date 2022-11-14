@@ -7,6 +7,7 @@ describe("UserInfo", () => {
   });
   test("Output planetary age of user input", () => {
     let user1 = new UserInfo("20");
-    expect(user1.murcAge).toEqual(83.33)
+    user1.planetCalc();
+    expect(user1.murcAge).toEqual("83.33")
   });
 });

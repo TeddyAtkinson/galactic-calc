@@ -7,10 +7,10 @@ export class UserInfo {
     this.jupAge = 0;
   }
 
-  planetCalc(currAge) {
-    this.murcAge = (currAge / .24);
-    this.venusAge = (currAge / .62);
-    this.marsAge = (currAge / 1.88);
-    this.jupAge = (currAge / 11.86);
+  planetCalc() {
+    this.murcAge = (this.currAge / .24).toPrecision(4);
+    this.venusAge = (this.currAge / .62).toPrecision(4);
+    this.marsAge = (this.currAge / 1.88).toPrecision(4);
+    this.jupAge = (this.currAge / 11.86).toPrecision(4);
   }
 }
