@@ -1,5 +1,5 @@
 export class UserInfo {
-  constructor() {
-    //this.currAge = currAge;
+  constructor(currAge) {
+    this.currAge = currAge;
   }
 }
