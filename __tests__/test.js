@@ -8,6 +8,11 @@ describe("UserInfo", () => {
   test("Output planetary age of user input", () => {
     let user1 = new UserInfo("20");
     user1.planetCalc();
-    expect(user1.murcAge).toEqual("83.33")
+    expect(user1.murcAge).toEqual("83.33");
+  });
+  test("Set lifespan average", () => {
+    let user1 = new UserInfo("20", true);
+    user1.lifespanCalc();
+    expect(user1.lifespan).toEqual(76);
   });
 });
