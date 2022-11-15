@@ -30,5 +30,11 @@ export class UserInfo {
     this.lifeLeftVenus = (this.lifespan - this.venusAge);
     this.lifeLeftMars = (this.lifespan - this.marsAge);
     this.lifeLeftJup = (this.lifespan - this.jupAge);
+    if(this.lifeLeftMurc <= 0) {
+      this.lifeLeftMurc = "You have out lived life expectancy by " + Math.abs(this.lifeLeftMurc).toPrecision(3) + " years.";
+    }
+    if(this.lifeLeftVenus <= 0) {
+      this.lifeLeftVenus = "You have out lived life expectancy by " + Math.abs(this.lifeLeftVenus).toPrecision(3) + " years.";
+    }
   }
 }

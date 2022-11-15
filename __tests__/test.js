@@ -26,4 +26,11 @@ describe("UserInfo", () => {
     user1.lifespanCalc();
     expect(user1.lifeLeftJup).toEqual(74.314);
   });
+  test("Outliving the average lifespan on another planet", () => {
+    let user1 = new UserInfo("90", true);
+    user1.planetCalc();
+    user1.lifespanCalc();
+    expect(user1.lifeLeftMurc).toEqual("You have out lived life expectancy by " + 299 + " years.");
+    expect(user1.lifeLeftVenus).toEqual("You have out lived life expectancy by " + 69.2 + " years.");
+  });
 });
