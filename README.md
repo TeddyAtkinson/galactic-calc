@@ -11,6 +11,11 @@ Input your age and recieve information about your life being born on other plane
 ## Instalation:
 1. Clone Repository to a place on your machine
 2. Open the index.html file to view project
+3. Open terminal at root directory and do the following:
+* Run: npm install
+* Run: npm run build
+* Run: npm run start
+* Run: npm run test
 
 ## Known Bugs:
 None
